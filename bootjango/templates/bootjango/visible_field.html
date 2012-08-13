@@ -1,0 +1,16 @@
+{% load bootjango %}
+{% with field|bootstrap_input_type as input_type %}
+    {% if layout == "horizontal" %}
+        {% include "bootjango/field_horizontal.html" %}
+    {% else %}
+        {% if layout == "inline" %}
+            {% include "bootjango/field_inline.html" %}
+        {% else %}
+            {% if layout == "search" %}
+                {% include "bootjango/field_search.html" %}
+            {% else %}
+                {% include "bootjango/field_vertical.html" %}
+            {% endif %}
+        {% endif %}
+    {% endif %}
+{% endwith %}

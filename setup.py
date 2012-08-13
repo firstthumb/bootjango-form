@@ -1,13 +1,13 @@
 from setuptools import setup
 
 setup(
-    name='bootjango-form',
+    name='BootJango Form',
     version='1.0.0',
     url='https://github.com/firstthumb/bootjango-form.git',
     author='Erol KOCAMAN',
     author_email='kocamanerol@gmail.com',
     license='Apache License 2.0',
-    packages=['bootjango-form', 'bootjango-form.templatetags'],
+    packages=['bootjango', 'bootjango.templatetags'],
     include_package_data=True,
     description='Bootstrap support for Django projects',
     classifiers=[

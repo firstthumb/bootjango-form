@@ -2,3 +2,8 @@
 *.pot
 *.pyc
 local_settings.py
+.project
+.pydevproject
+BootJango_Form.egg-info
+build
+dist
